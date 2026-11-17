@@ -3,10 +3,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export const metadata: Metadata = {
   title: "Luxury Properties in Dubai | Skyline Properties",
+
   description:
     "Explore luxury apartments, villas and premium residential properties in Dubai. Discover Downtown Dubai, Palm Jumeirah and Dubai Marina through Skyline Properties.",
+
   keywords: [
     "luxury properties in Dubai",
     "Dubai properties",
@@ -16,10 +19,16 @@ export const metadata: Metadata = {
     "Dubai residential properties",
     "prime property locations in Dubai",
   ],
+
+  alternates: {
+    canonical: "/skyline-properties",
+  },
+
   openGraph: {
     title: "Luxury Properties in Dubai | Skyline Properties",
     description:
       "Discover luxury apartments, villas and premium residential locations across Dubai.",
+    url: "/skyline-properties",
     type: "website",
     siteName: "Skyline Properties",
     images: [
@@ -31,6 +40,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Luxury Properties in Dubai | Skyline Properties",
@@ -39,6 +49,7 @@ export const metadata: Metadata = {
     images: ["/Assets/skyline/skyline-hero.webp"],
   },
 };
+
 
 const properties = [
   {

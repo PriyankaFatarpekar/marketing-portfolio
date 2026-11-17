@@ -116,6 +116,7 @@
 //   );
 // }
 
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -130,6 +131,39 @@ export function generateStaticParams() {
     slug: project.slug,
   }));
 }
+
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { slug } = await params;
+
+  const project = projects.find((item) => item.slug === slug);
+
+  if (!project) {
+    return {};
+  }
+
+  const canonicalUrl = `/work/${slug}`;
+
+  return {
+    title: `${project.title} | Priyanka Fatarpekar`,
+
+    description: project.description,
+
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
+    openGraph: {
+      title: `${project.title} | Priyanka Fatarpekar`,
+      description: project.description,
+      url: canonicalUrl,
+      type: "article",
+    },
+  };
+}
+
 
 export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;

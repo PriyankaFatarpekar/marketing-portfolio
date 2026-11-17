@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Inter, DM_Sans } from "next/font/google";
 import "./globals.css";
@@ -13,17 +14,48 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    "https://marketing-portfolio-gamma-six.vercel.app"
+  ),
+
   title: "Priyanka Fatarpekar | Digital Marketing Portfolio",
+
   description:
-    "Digital marketing portfolio of Priyanka Fatarpekar, combining digital marketing, web, SEO, content and analytics.",
+    "Digital marketing portfolio of Priyanka Fatarpekar, combining digital marketing, web development, SEO, content and analytics.",
+
   keywords: [
     "Digital Marketing",
     "Marketing Coordinator",
     "SEO",
     "Social Media Marketing",
     "Digital Marketing UAE",
-    "Dubai Marketing",
+    "Digital Marketing Sharjah",
+    "Digital Marketing Dubai",
+    "Web Development",
+    "SEO Portfolio",
   ],
+
+  // Google Search Console Verification
+  verification: {
+    google: "hMkzPsXcb0iWvLnBlSEcJSbJY0F_W_JD8JB3_WZ8ed8",
+  },
+
+  openGraph: {
+    title: "Priyanka Fatarpekar | Digital Marketing Portfolio",
+    description:
+      "Explore my digital marketing, SEO, web development and content projects.",
+    url: "/",
+    siteName: "Priyanka Fatarpekar Portfolio",
+    locale: "en_AE",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Priyanka Fatarpekar | Digital Marketing Portfolio",
+    description:
+      "Explore my digital marketing, SEO, web development and content projects.",
+  },
 };
 
 export default function RootLayout({
