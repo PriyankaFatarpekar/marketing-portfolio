@@ -21,7 +21,7 @@ export default function Projects() {
             </h2>
           </div>
 
-          <p className="max-w-sm text-sm leading-6 text-[#777770]">
+          <p className="max-w-sm text-sm leading-6 text-[#595952]">
             Self-initiated projects created to apply digital marketing
             concepts in practical scenarios.
           </p>
