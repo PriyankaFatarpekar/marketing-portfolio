@@ -1,5 +1,5 @@
 export const metadata = {
-title: "Luxury Properties in Dubai | Skyline Properties",
+  title: "Luxury Properties in Dubai | Skyline Properties",
 
   description:
     "Explore luxury apartments, villas and prime property locations in Dubai through the Skyline Properties real estate website concept.",
@@ -164,14 +164,20 @@ export default function SkylineProperties() {
               Find Your Place
               <br />
               <span className="font-semibold">
-                Above Ordinary.
+                in Dubai.
               </span>
             </h1>
 
             <p className="mt-7 max-w-xl text-base leading-8 text-white/75">
-              Explore thoughtfully selected residences, premium
-              properties and exceptional opportunities across Dubai.
-              Your next chapter begins with Skyline Properties.
+              Luxury apartments in Dubai
+
+
+
+              Dubai residential properties
+
+
+
+              Premium property locations in Dubai
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
