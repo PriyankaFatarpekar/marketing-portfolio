@@ -42,44 +42,47 @@ export default function Hero() {
             </div>
 
             <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-[#595952]">
-  <span className="inline-flex items-center gap-2">
-    <MapPin size={16} strokeWidth={1.8} className="text-[#1f5c4a]" />
-    Based in Sharjah, UAE
-  </span>
+              <span className="inline-flex items-center gap-2">
+                <MapPin size={16} strokeWidth={1.8} className="text-[#1f5c4a]" />
+                Based in Sharjah, UAE
+              </span>
 
-  <span className="text-[#a3a39b]">→</span>
+              <span className="text-[#a3a39b]">→</span>
 
-  <span>Open to opportunities in Dubai & Sharjah</span>
-</div>
-          </div>
-
-          <div className="relative hidden lg:block">
-            <div className="relative ml-auto aspect-square max-w-[440px] overflow-hidden rounded-[40px] bg-[#1f5c4a] p-8">
-              <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full border border-white/20" />
-              <div className="absolute -bottom-20 -left-20 h-60 w-60 rounded-full border border-white/20" />
-
-              <div className="relative flex h-full flex-col justify-between">
-                <div className="text-sm font-medium text-white/60">
-                  DIGITAL / WEB / GROWTH
-                </div>
-
-                <div>
-                  <p className="text-6xl font-semibold tracking-tight text-white">
-                    01
-                  </p>
-                  <p className="mt-3 max-w-[250px] text-sm leading-6 text-white/70">
-                    Understanding the audience before creating the experience.
-                  </p>
-                </div>
-
-                <div className="flex justify-between border-t border-white/15 pt-5 text-xs text-white/50">
-                  <span>STRATEGY</span>
-                  <span>CREATIVE</span>
-                  <span>ANALYTICS</span>
-                </div>
-              </div>
+              <span>Open to opportunities in Dubai & Sharjah</span>
             </div>
           </div>
+
+         
+<div className="relative hidden lg:block">
+  <div className="relative ml-auto aspect-square max-w-[440px] overflow-hidden rounded-[40px] bg-[#1f5c4a] p-8">
+    <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full border border-white/20" />
+    <div className="absolute -bottom-20 -left-20 h-60 w-60 rounded-full border border-white/20" />
+
+    <div className="relative flex h-full flex-col justify-between">
+      <div className="text-sm font-medium text-[#ffffff]">
+        DIGITAL / WEB / GROWTH
+      </div>
+
+      <div>
+        <p className="text-6xl font-semibold tracking-tight text-white">
+          01
+        </p>
+
+        <p className="mt-3 max-w-[250px] text-sm leading-6 text-[#ffffff]">
+          Understanding the audience before creating the experience.
+        </p>
+      </div>
+
+      <div className="flex justify-between border-t border-white/15 pt-5 text-xs text-[#ffffff]">
+        <span>STRATEGY</span>
+        <span>CREATIVE</span>
+        <span>ANALYTICS</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         </div>
       </div>
