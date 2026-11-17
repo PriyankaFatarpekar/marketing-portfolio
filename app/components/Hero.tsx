@@ -1,9 +1,11 @@
+import { MapPin } from "lucide-react";
+
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden pt-[76px]">
       <div className="container-width">
         <div className="grid min-h-[calc(100vh-76px)] items-center gap-16 py-20 lg:grid-cols-[1.2fr_0.8fr]">
-          
+
           <div>
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#1f5c4a]/20 bg-[#dfece7] px-4 py-2 text-sm font-medium text-[#1f5c4a]">
               <span className="h-2 w-2 rounded-full bg-[#1f5c4a]" />
@@ -39,11 +41,16 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-[#777770]">
-              <span>📍 India</span>
-              <span>→</span>
-              <span>Dubai, UAE — September 2026</span>
-            </div>
+            <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-[#595952]">
+  <span className="inline-flex items-center gap-2">
+    <MapPin size={16} strokeWidth={1.8} className="text-[#1f5c4a]" />
+    Based in Sharjah, UAE
+  </span>
+
+  <span className="text-[#a3a39b]">→</span>
+
+  <span>Open to opportunities in Dubai & Sharjah</span>
+</div>
           </div>
 
           <div className="relative hidden lg:block">
