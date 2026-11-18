@@ -58,6 +58,7 @@
 //    (keep all your current fields — just add these two)
 // ─────────────────────────────────────────────────────────
 
+
 export type Project = {
   slug: string;
   number: string;
@@ -66,21 +67,14 @@ export type Project = {
   description: string;
   tags: string[];
   color: string;
-  cover?: string;              // NEW — card + hero image path
-  gallery?: {                  // NEW — images shown on the case study page
+  cover?: string;
+  gallery?: {
     src: string;
     alt: string;
   }[];
 };
 
-// ─────────────────────────────────────────────────────────
-// 2) Add this object into your existing `projects` array.
-//    Adjust the `number` to match your sequence.
-// ─────────────────────────────────────────────────────────
-
 export const projects: Project[] = [
-  // ...your existing projects stay exactly as they are
-
   {
     slug: "brew-and-bean",
     number: "01",
@@ -88,7 +82,12 @@ export const projects: Project[] = [
     category: "Social Media Marketing",
     description:
       "Instagram content strategy for a Dubai-based café — designed a cohesive post, carousel and profile system to build brand presence and drive engagement.",
-    tags: ["Instagram Strategy", "Content Design", "Branding", "Canva"],
+    tags: [
+      "Instagram Strategy",
+      "Content Design",
+      "Branding",
+      "Canva",
+    ],
     color: "bg-[#f2ede2]",
     cover: "/Assets/logo.png",
     gallery: [
@@ -107,23 +106,42 @@ export const projects: Project[] = [
     ],
   },
 
+  {
+    slug: "skyline-properties",
+    number: "02",
+    title: "Skyline Properties",
+    category: "SEO & Website Marketing",
+    description:
+      "A digital marketing and SEO concept for a fictional Dubai real estate brand, featuring a property website, keyword research, on-page optimization, technical SEO and content strategy.",
+    tags: [
+      "SEO Strategy",
+      "Keyword Research",
+      "On-Page SEO",
+      "Technical SEO",
+      "Content Marketing",
+      "Next.js",
+    ],
+    color: "bg-[#14243A]",
+    cover: "/Assets/skyline.png",
+  },
 
   {
-  slug: "skyline-properties",
-  number: "02",
-  title: "Skyline Properties",
-  category: "SEO & Website Marketing",
-  description:
-    "A digital marketing and SEO concept for a fictional Dubai real estate brand, featuring a property website, keyword research, on-page optimization, technical SEO and content strategy.",
-  tags: [
-    "SEO Strategy",
-    "Keyword Research",
-    "On-Page SEO",
-    "Technical SEO",
-    "Content Marketing",
-    "Next.js",
-  ],
-  color: "bg-[#14243A]",
-  cover: "/Assets/skyline.png",
-},
+    slug: "seo-analytics-implementation",
+    number: "03",
+    title: "SEO & Website Analytics",
+    category: "Technical SEO & Analytics",
+    description:
+      "Implemented technical SEO for my personal portfolio website, including canonical URLs, XML sitemap, robots.txt, Google Search Console verification and Google Analytics 4 integration to monitor website activity.",
+    tags: [
+      "Technical SEO",
+      "Google Search Console",
+      "Google Analytics 4",
+      "Sitemap Optimization",
+      "Canonical URLs",
+      "Next.js",
+      "Vercel",
+    ],
+    color: "bg-[#e8eee9]",
+    cover: "/Assets/seo-analytics.png",
+  },
 ];
