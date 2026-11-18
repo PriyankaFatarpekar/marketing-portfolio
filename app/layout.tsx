@@ -1,6 +1,7 @@
 
 import type { Metadata } from "next";
 import { Inter, DM_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -35,7 +36,6 @@ export const metadata: Metadata = {
     "SEO Portfolio",
   ],
 
-  // Google Search Console Verification
   verification: {
     google: "hMkzPsXcb0iWvLnBlSEcJSbJY0F_W_JD8JB3_WZ8ed8",
   },
@@ -68,6 +68,21 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${dmSans.variable} bg-[#f7f7f3] text-[#171717] antialiased`}
       >
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-668EM69T5H"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-668EM69T5H');
+          `}
+        </Script>
+
         {children}
       </body>
     </html>
